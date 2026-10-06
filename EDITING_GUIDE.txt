@@ -1,0 +1,31 @@
+FUTURE MINDS MENTORSHIP WEBSITE — EDITING GUIDE
+
+1. SIMPLE EDITING
+Open index.html in a text editor such as VS Code, Notepad++, or another code editor.
+Search for the text you want to change and replace it.
+
+2. IMPORTANT DETAILS
+Current contact details:
+WhatsApp/Phone: +254 704 110 516
+Email: tjuma815@gmail.com
+Initial focus: Kakamega County, Kenya
+
+3. LOGO
+The text logo is currently written in the navigation as:
+Future Minds Mentorship
+You can replace it with an image logo later.
+
+4. PHOTOS
+This version is intentionally built without external photos. Photos can be added later to the About, Programs and Impact sections.
+
+5. FORMS
+The current contact form opens the visitor's email application. A real online form can be connected later to a form service or backend.
+
+6. PUBLISHING
+Upload index.html to a web host. Good beginner-friendly options include GitHub Pages, Netlify, or Vercel. A custom domain such as futureminds... can be connected after purchasing one.
+
+7. IMPORTANT
+Do not delete the <style> section unless you know CSS. It controls the design.
+
+8. NEXT UPGRADE
+Add the actual Future Minds logo, real photos, social media links, a proper enrollment form, mentor application form, grants page, project updates/blog, and a custom domain.
