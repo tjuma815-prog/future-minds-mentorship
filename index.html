@@ -1,49 +1,409 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Future Minds Mentorship | Empowering the Next Generation</title>
-<meta name="description" content="Future Minds Mentorship equips young people aged 9–25 in Kakamega County with technology, AI, digital skills, mentorship and entrepreneurship pathways.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Future Minds Mentorship | Building minds for a changing world</title>
+<meta name="description" content="Future Minds Mentorship equips young people aged 9 to 25 with technology, AI, digital skills, mentorship, entrepreneurship and career development opportunities.">
+<meta name="keywords" content="youth development, mentorship, technology education, AI education, digital skills, entrepreneurship, career development">
+<meta name="theme-color" content="#0a1633">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Future Minds Mentorship">
+<meta property="og:title" content="Future Minds Mentorship | Building minds for a changing world">
+<meta property="og:description" content="Technology, AI, digital skills, mentorship and entrepreneurship for young people aged 9 to 25. Learn. Build. Solve. Earn. Teach.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a1633'/%3E%3Cpath d='M8 23V9h10M8 16h8' stroke='%23d4a843' stroke-width='3' fill='none'/%3E%3C/svg%3E">
 <style>
-:root{--navy:#061a32;--navy2:#0b2d50;--blue:#2386e8;--gold:#f4bd45;--ink:#132238;--muted:#64758a;--bg:#f6f9fc;--white:#fff;--line:#dfe8f1}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);line-height:1.6}a{text-decoration:none;color:inherit}.wrap{width:min(1160px,92%);margin:auto}
-.top{background:#031122;color:#b9c9d9;font-size:13px}.top .wrap{display:flex;justify-content:space-between;padding:8px 0}
-nav{position:sticky;top:0;z-index:50;background:rgba(6,26,50,.96);backdrop-filter:blur(14px);border-bottom:1px solid #183756}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{color:white;font-weight:900;font-size:19px}.brand i{font-style:normal;color:var(--gold)}.links{display:flex;gap:24px;color:#d8e4ef;font-size:14px}.links a:hover{color:var(--gold)}.navbtn{background:var(--gold);color:#0a1727;padding:10px 15px;border-radius:7px;font-weight:800}.menu{display:none;color:white;font-size:25px}
-.hero{background:radial-gradient(circle at 80% 15%,#1b5685 0,#0d3459 35%,#061a32 73%);color:white;padding:90px 0 78px}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:65px;align-items:center}.tag{color:var(--gold);font-weight:900;letter-spacing:2px;text-transform:uppercase;font-size:12px}.hero h1{font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-2.8px;margin:16px 0 22px}.hero p{font-size:18px;color:#d2e0ed;max-width:680px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-block;border-radius:8px;padding:13px 20px;font-weight:900;border:1px solid transparent}.primary{background:var(--gold);color:#101a24}.outline{border-color:#6e8da9;color:white}.hero-card{border:1px solid #31516e;background:rgba(255,255,255,.075);border-radius:22px;padding:27px;box-shadow:0 25px 70px #0004}.hero-card h3{margin:0 0 18px;font-size:21px}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mini{padding:18px;border-radius:12px;background:#ffffff0d;border:1px solid #ffffff15}.mini b{display:block;color:var(--gold);font-size:24px}.mini span{font-size:13px;color:#c3d2e0}
-section{padding:88px 0}.light{background:var(--bg)}.head{max-width:730px;margin-bottom:40px}.eyebrow{color:var(--blue);font-weight:900;text-transform:uppercase;letter-spacing:1.7px;font-size:12px}.head h2{font-size:clamp(30px,4vw,48px);line-height:1.12;margin:10px 0;color:var(--navy)}.head p{color:var(--muted);font-size:16px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:28px;box-shadow:0 10px 30px #09284d08}.card .ico{font-size:28px}.card h3{color:var(--navy);margin:12px 0 7px}.card p{color:var(--muted);margin:0;font-size:14px}
-.stats{background:var(--navy);color:white}.statgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stat{padding:25px;border-left:1px solid #ffffff1b}.stat b{font-size:38px;color:var(--gold);display:block}.stat span{color:#b8c9da;font-size:13px}
-.path{background:#081e38;color:white}.path .head h2{color:white}.path .head p{color:#b8c9da}.pathgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.pathitem{padding:24px 17px;border:1px solid #ffffff16;background:#ffffff08;border-radius:12px}.pathitem strong{color:var(--gold);display:block;margin-bottom:8px}.pathitem span{color:#c1cfdb;font-size:13px}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:24px}.feature{padding:35px;border-radius:18px;background:white;border:1px solid var(--line)}.feature.dark{background:var(--navy);color:white}.feature h3{font-size:25px;margin-top:0}.feature p{color:var(--muted)}.dark p{color:#c2d0dd}.list{padding:0;margin:20px 0;list-style:none}.list li{padding:8px 0;border-bottom:1px solid #ffffff18}.light .list li{border-color:var(--line)}
-.cta{background:linear-gradient(110deg,var(--navy),var(--navy2));color:white;text-align:center}.cta h2{color:white;font-size:42px;margin:0 0 12px}.cta p{color:#c4d2df;max-width:650px;margin:0 auto}
-.contactgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px}.contactbox{display:grid;gap:12px;margin-top:24px}.contactitem{border:1px solid var(--line);border-radius:10px;padding:15px}.contactitem b{display:block;color:var(--navy)}.contactitem span{color:var(--muted);font-size:14px}form{display:grid;gap:12px}input,textarea{width:100%;border:1px solid #ccd9e5;border-radius:8px;padding:14px;font:inherit}textarea{min-height:140px}
-footer{background:#031122;color:#8fa5ba;padding:35px 0}.foot{display:flex;justify-content:space-between;gap:20px}.foot b{color:white}
-@media(max-width:850px){.links,.navbtn{display:none}.menu{display:block}.hero-grid,.split,.contactgrid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.statgrid{grid-template-columns:1fr 1fr}.pathgrid{grid-template-columns:1fr 1fr}}
-@media(max-width:540px){.top{display:none}.cards,.statgrid,.pathgrid{grid-template-columns:1fr}section{padding:68px 0}.hero{padding:70px 0}.hero h1{letter-spacing:-1.5px}.hero-card{margin-top:10px}.foot{flex-direction:column}}
+:root{--navy:#0a1633;--navy2:#0f1f45;--navy3:#162a5a;--gold:#d4a843;--gold2:#e9c776;--blue:#3d7bff;--blue2:#8fb4ff;--text:#e8edf7;--mute:#a9b6d3;--line:rgba(143,180,255,.18);--serif:Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font:16px/1.65 var(--sans);background:var(--navy);color:var(--text);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+section{padding:96px 0}
+.alt{background:var(--navy2)}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.15;letter-spacing:-.01em}
+h1{font-size:clamp(2.5rem,6.4vw,4.8rem)}
+h2{font-size:clamp(1.9rem,4vw,3rem);margin-bottom:18px}
+h3{font-size:1.25rem;margin-bottom:8px}
+.lead{font-size:1.12rem;color:var(--mute);max-width:680px}
+.tag{display:inline-block;color:var(--gold);font-weight:600;font-size:.9rem;margin-bottom:14px;padding-left:14px;border-left:3px solid var(--gold)}
+.head{margin-bottom:48px}
+.center{text-align:center}.center .lead{margin-inline:auto}.center .tag{padding:0;border:0}
+.btn{display:inline-block;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;border:2px solid var(--gold);background:var(--gold);color:var(--navy);transition:transform .2s,background .2s;cursor:pointer;font-family:inherit;font-size:1rem}
+.btn:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--text);border-color:var(--blue2)}
+.btn.ghost:hover{background:rgba(143,180,255,.12)}
+:focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--gold);color:var(--navy);padding:10px 16px;border-radius:6px;z-index:200}
+.skip:focus{left:8px}
+/* header */
+header{position:sticky;top:0;z-index:100;background:rgba(10,22,51,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-weight:700;font-size:1.1rem}
+.mark{width:36px;height:36px;border-radius:9px;background:var(--navy3);border:1px solid var(--gold);display:grid;place-items:center}
+nav ul{display:flex;gap:22px;list-style:none;align-items:center}
+nav a{text-decoration:none;font-size:.93rem;color:var(--mute);transition:color .2s}
+nav a:hover{color:var(--gold2)}
+nav .btn{padding:9px 18px;color:var(--navy);font-size:.92rem}
+nav .btn:hover{color:var(--navy)}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:8px;width:44px;height:44px;cursor:pointer;color:var(--text)}
+.burger span,.burger span:before,.burger span:after{display:block;width:20px;height:2px;background:currentColor;margin:auto;position:relative;transition:.25s}
+.burger span:before,.burger span:after{content:"";position:absolute;left:0}
+.burger span:before{top:-6px}.burger span:after{top:6px}
+.burger[aria-expanded=true] span{background:transparent}
+.burger[aria-expanded=true] span:before{top:0;transform:rotate(45deg)}
+.burger[aria-expanded=true] span:after{top:0;transform:rotate(-45deg)}
+/* hero */
+.hero{padding:110px 0 96px;position:relative;overflow:hidden;background:radial-gradient(circle at 85% 20%,rgba(61,123,255,.22),transparent 45%),var(--navy)}
+.hero .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero p.sub{font-size:1.18rem;color:var(--mute);margin:26px 0 34px;max-width:600px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.phil{margin-top:40px;font-family:var(--serif);font-size:1.15rem;color:var(--gold2)}
+.net{aspect-ratio:1;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,var(--navy2),var(--navy3));padding:20px}
+.net svg{width:100%;height:100%;display:block}
+.pulse{animation:p 3s ease-in-out infinite}
+@keyframes p{50%{opacity:.4}}
+/* cards */
+.cards{display:grid;gap:22px}
+.c3{grid-template-columns:repeat(3,1fr)}.c2{grid-template-columns:repeat(2,1fr)}.c4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--navy3);border:1px solid var(--line);border-radius:14px;padding:30px;transition:border-color .25s,transform .25s}
+.card:hover{border-color:var(--gold);transform:translateY(-4px)}
+.alt .card{background:var(--navy)}
+.card p{color:var(--mute)}
+.ico{width:48px;height:48px;border-radius:10px;background:rgba(212,168,67,.12);border:1px solid rgba(212,168,67,.4);display:grid;place-items:center;margin-bottom:20px}
+.ico svg{width:24px;height:24px;stroke:var(--gold);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+/* vision */
+.vm{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.vm .card{padding:44px}
+.vm .card:first-child{background:linear-gradient(150deg,var(--navy3),#1d3a80)}
+.vm .card:last-child{background:linear-gradient(150deg,#14224a,var(--navy3));border-color:rgba(212,168,67,.45)}
+.vm h3{font-size:1.9rem;color:var(--gold2)}
+.vm p{font-family:var(--serif);font-size:1.2rem;color:var(--text);line-height:1.6}
+/* approach */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:s;position:relative}
+.step{padding:28px 22px;border-top:3px solid var(--line);position:relative}
+.step:before{content:"";position:absolute;top:-8px;left:22px;width:13px;height:13px;border-radius:50%;background:var(--gold)}
+.step b{display:block;font-family:var(--serif);font-size:2.6rem;color:var(--blue2);line-height:1}
+.step h3{margin:14px 0 6px;color:var(--gold2)}
+.step p{color:var(--mute);font-size:.97rem}
+.bigphil{font-family:var(--serif);font-size:clamp(1.8rem,4.6vw,3.4rem);text-align:center;margin-bottom:54px;line-height:1.25}
+/* ages */
+.age{border-top:4px solid var(--blue)}
+.age:nth-child(2){border-top-color:var(--gold)}.age:nth-child(3){border-top-color:var(--blue2)}
+.age .yrs{font-family:var(--serif);font-size:2.3rem;line-height:1}
+.age .yrs small{font-size:1rem;color:var(--mute)}
+.age h3{color:var(--gold2);margin:12px 0 8px}
+/* stats */
+.stat{text-align:center;padding:30px 16px}
+.stat b{display:block;font-family:var(--serif);font-size:2.8rem;color:var(--gold)}
+.stat span{color:var(--mute)}
+.note{margin-top:28px;padding:20px 24px;border-left:3px solid var(--blue);background:rgba(61,123,255,.08);border-radius:0 10px 10px 0;color:var(--mute)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;margin:24px 0 30px}
+.list li{padding-left:24px;position:relative;color:var(--mute)}
+.list li:before{content:"";position:absolute;left:0;top:.6em;width:10px;height:10px;border:2px solid var(--gold);border-radius:2px;transform:rotate(45deg)}
+.panel{background:var(--navy3);border:1px solid var(--line);border-radius:18px;padding:40px}
+.panel p{color:var(--mute);margin-bottom:22px}
+/* involved */
+.opt{text-decoration:none;display:block}
+.opt h3{display:flex;justify-content:space-between;align-items:center}
+.opt h3:after{content:"\2192";color:var(--gold)}
+/* contact */
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px}
+.info div{padding:18px 0;border-bottom:1px solid var(--line)}
+.info small{display:block;color:var(--gold);font-weight:600}
+.info a{text-decoration:none;font-size:1.1rem}
+.info a:hover{color:var(--gold2)}
+form{background:var(--navy3);border:1px solid var(--line);border-radius:16px;padding:32px}
+label{display:block;font-weight:600;margin-bottom:6px;font-size:.95rem}
+input,textarea{width:100%;padding:13px 14px;border-radius:8px;border:1px solid var(--line);background:var(--navy);color:var(--text);font:inherit;margin-bottom:18px}
+input:focus,textarea:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+textarea{min-height:140px;resize:vertical}
+/* footer */
+footer{background:#071029;border-top:1px solid var(--line);padding:64px 0 28px}
+.fg{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;margin-bottom:40px}
+footer h4{color:var(--gold);margin-bottom:14px;font-size:1rem}
+footer ul{list-style:none;display:grid;gap:8px}
+footer a{color:var(--mute);text-decoration:none;font-size:.95rem}
+footer a:hover{color:var(--gold2)}
+footer p{color:var(--mute)}
+.copy{border-top:1px solid var(--line);padding-top:22px;color:var(--mute);font-size:.9rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media(max-width:980px){
+.burger{display:block}
+nav{position:absolute;top:72px;left:0;right:0;background:var(--navy);border-bottom:1px solid var(--line);display:none;padding:12px 20px 24px}
+nav.open{display:block}
+nav ul{flex-direction:column;align-items:stretch;gap:0}
+nav li a{display:block;padding:14px 4px;border-bottom:1px solid var(--line);font-size:1rem}
+nav li .btn{margin-top:16px;text-align:center}
+.hero .grid,.split,.contact,.vm{grid-template-columns:1fr}
+.net{max-width:420px}
+.c3,.c4{grid-template-columns:1fr 1fr}
+.steps{grid-template-columns:1fr 1fr}
+.fg{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+section{padding:68px 0}.hero{padding:70px 0}
+.c3,.c4,.c2,.steps,.list,.fg{grid-template-columns:1fr}
+.vm .card{padding:30px}
+.btn{width:100%;text-align:center}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
-<div class="top"><div class="wrap"><span>Kakamega County, Kenya</span><span>+254 704 110 516 · tjuma815@gmail.com</span></div></div>
-<nav><div class="wrap nav"><a class="brand" href="#">Future Minds <i>Mentorship</i></a><div class="links"><a href="#about">About</a><a href="#programs">Programs</a><a href="#impact">Impact</a><a href="#involve">Get Involved</a><a href="#grants">Grants</a><a href="#contact">Contact</a></div><a class="navbtn" href="#involve">Join Us</a><div class="menu">☰</div></div></nav>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-screen" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></symbol>
+<symbol id="i-chip" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.3 1 2.5h6c0-1.2.3-1.8 1-2.5A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-rise" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-9M15 6h6v6"/></symbol>
+<symbol id="i-brief" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V4h6v3M3 13h18"/></symbol>
+<symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.5a3.5 3.5 0 0 1 0 7M18 14.5c2.2.7 3.5 2.6 3.5 5.5"/></symbol>
+<symbol id="i-hand" viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 6-8 11-8 11z"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol>
+<symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></symbol>
+</svg>
+<a class="skip" href="#main">Skip to main content</a>
+<header>
+<div class="wrap bar">
+<a class="logo" href="#home" aria-label="Future Minds Mentorship home">
+<span class="mark"><svg width="20" height="20" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 24V8h16M8 16h12" stroke="#d4a843" stroke-width="3.5" fill="none" stroke-linecap="round"/></svg></span>
+Future Minds Mentorship</a>
+<button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+<nav id="menu" aria-label="Main navigation">
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#what-we-do">Programs</a></li>
+<li><a href="#approach">Approach</a></li>
+<li><a href="#who-we-serve">Who We Serve</a></li>
+<li><a href="#impact">Impact</a></li>
+<li><a href="#mentors">Mentors</a></li>
+<li><a href="#partnerships">Partnerships</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a class="btn" href="#get-involved">Get Involved</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="main">
 
-<header class="hero"><div class="wrap hero-grid"><div><div class="tag">Community · Technology · Mentorship</div><h1>Building minds for a changing world.</h1><p>Future Minds Mentorship helps young people aged 9–25 discover technology, AI, digital skills and entrepreneurship—and turn learning into practical opportunities.</p><div class="actions"><a class="btn primary" href="#involve">Get Involved</a><a class="btn outline" href="#programs">Explore Programs</a></div></div><div class="hero-card"><h3>Our vision in action</h3><div class="mini-grid"><div class="mini"><b>9–25</b><span>Young people we serve</span></div><div class="mini"><b>AI</b><span>Future-ready learning</span></div><div class="mini"><b>5</b><span>Stages of our pathway</span></div><div class="mini"><b>1st</b><span>Focus: Kakamega County</span></div></div></div></div></header>
+<section class="hero" id="home">
+<div class="wrap grid">
+<div>
+<span class="tag">Youth development and community technology initiative</span>
+<h1>Building minds for a changing world.</h1>
+<p class="sub">Future Minds Mentorship equips young people aged 9 to 25 with technology, AI, digital skills, mentorship, entrepreneurship and career development opportunities that help turn potential into practical action.</p>
+<div class="cta"><a class="btn" href="#get-involved">Get Involved</a><a class="btn ghost" href="#what-we-do">Explore Programs</a></div>
+<p class="phil">Learn. Build. Solve. Earn. Teach.</p>
+</div>
+<div class="net" aria-hidden="true">
+<svg viewBox="0 0 400 400" fill="none">
+<g stroke="#8fb4ff" stroke-opacity=".45" stroke-width="1.5"><path d="M200 70L90 150M200 70L310 150M90 150L120 280M310 150L280 280M90 150L310 150M120 280L280 280M200 70L200 200M200 200L90 150M200 200L310 150M200 200L120 280M200 200L280 280"/></g>
+<g fill="#0f1f45" stroke="#d4a843" stroke-width="2.5"><circle cx="200" cy="70" r="20"/><circle cx="90" cy="150" r="16"/><circle cx="310" cy="150" r="16"/><circle cx="120" cy="280" r="16"/><circle cx="280" cy="280" r="16"/></g>
+<circle cx="200" cy="200" r="38" fill="#d4a843"/>
+<circle class="pulse" cx="200" cy="200" r="58" stroke="#d4a843" stroke-opacity=".5" stroke-width="2"/>
+<path d="M186 214v-28h26M186 200h20" stroke="#0a1633" stroke-width="5" stroke-linecap="round"/>
+<g font-family="Georgia,serif" font-size="15" fill="#e8edf7" text-anchor="middle"><text x="200" y="35">Learn</text><text x="60" y="185">Build</text><text x="340" y="185">Solve</text><text x="120" y="325">Earn</text><text x="280" y="325">Teach</text></g>
+</svg>
+</div>
+</div>
+</section>
 
-<section id="about"><div class="wrap"><div class="head"><div class="eyebrow">Who we are</div><h2>Helping young people move from potential to possibility.</h2><p>Future Minds Mentorship is a community initiative starting in Kakamega County, creating access to technology, mentorship, practical projects and pathways to careers and entrepreneurship.</p></div><div class="cards"><div class="card"><div class="ico">◈</div><h3>Accessible learning</h3><p>We make digital and technology learning practical, understandable and relevant to young people.</p></div><div class="card"><div class="ico">✦</div><h3>Practical innovation</h3><p>Learners don't only study ideas—they use skills to build, experiment and solve real problems.</p></div><div class="card"><div class="ico">◎</div><h3>Human mentorship</h3><p>Mentors and volunteers help learners build confidence, direction and connections.</p></div></div></div></section>
+<section id="about" class="alt">
+<div class="wrap">
+<div class="head"><span class="tag">About Us</span><h2>Turning potential into possibility.</h2>
+<p class="lead">Future Minds Mentorship connects technology and digital learning with practical projects, problem solving, entrepreneurship, career development and human mentorship. We are built to grow into a national and international organization that serves young people wherever opportunity is needed.</p></div>
+<div class="cards c3">
+<article class="card"><div class="ico"><svg><use href="#i-screen"/></svg></div><h3>Accessible Learning</h3><p>Make technology and digital learning practical, understandable and relevant.</p></article>
+<article class="card"><div class="ico"><svg><use href="#i-bulb"/></svg></div><h3>Practical Innovation</h3><p>Encourage young people to build, experiment and solve real problems.</p></article>
+<article class="card"><div class="ico"><svg><use href="#i-people"/></svg></div><h3>Human Mentorship</h3><p>Connect young people with people who can provide guidance, experience, encouragement and useful connections.</p></article>
+</div>
+</div>
+</section>
 
-<section id="programs" class="light"><div class="wrap"><div class="head"><div class="eyebrow">Our programs</div><h2>Skills for the digital generation.</h2><p>Our program areas can grow as the initiative develops, while staying focused on practical outcomes.</p></div><div class="cards"><div class="card"><div class="ico">💻</div><h3>Digital Skills</h3><p>Digital literacy, productivity, online tools, research and responsible digital participation.</p></div><div class="card"><div class="ico">AI</div><h3>Artificial Intelligence</h3><p>AI foundations, responsible use and practical experimentation with emerging tools.</p></div><div class="card"><div class="ico">⚙</div><h3>Project Building</h3><p>Turning knowledge into useful projects that respond to real needs.</p></div><div class="card"><div class="ico">↗</div><h3>Entrepreneurship</h3><p>Developing ideas, value creation and pathways toward sustainable opportunities.</p></div><div class="card"><div class="ico">◎</div><h3>Career Readiness</h3><p>Communication, problem-solving, mentorship and exposure to future career pathways.</p></div><div class="card"><div class="ico">+</div><h3>Peer Leadership</h3><p>Encouraging learners to share knowledge and eventually guide others.</p></div></div></div></section>
+<section id="vision-mission">
+<div class="wrap">
+<div class="head center"><span class="tag">Vision and Mission</span><h2>Where we are going and how we get there.</h2></div>
+<div class="vm">
+<article class="card"><h3>Vision</h3><p>“A future where every young person has access to the skills, confidence, mentorship and opportunities needed to shape their future and contribute meaningfully to society.”</p></article>
+<article class="card"><h3>Mission</h3><p>“To equip young people aged 9 to 25 with technology, AI, digital skills, mentorship and entrepreneurship opportunities through practical learning, projects, guidance and meaningful connections.”</p></article>
+</div>
+</div>
+</section>
 
-<section id="impact" class="stats"><div class="wrap"><div class="head"><div class="eyebrow">Our direction</div><h2 style="color:white">Start local. Build for wider impact.</h2><p>These are our starting commitments—not inflated impact claims. As programs grow, this section can show verified results.</p></div><div class="statgrid"><div class="stat"><b>9–25</b><span>Target age range</span></div><div class="stat"><b>5</b><span>Learning-to-impact stages</span></div><div class="stat"><b>1</b><span>Initial county focus</span></div><div class="stat"><b>∞</b><span>Potential to scale</span></div></div></div></section>
+<section id="why" class="alt">
+<div class="wrap">
+<div class="head"><span class="tag">Why Future Minds Mentorship</span><h2>Learning should lead somewhere.</h2>
+<p class="lead">Young people should not only consume information. They should have opportunities to practice skills, build projects, solve problems, create value and eventually help others.</p></div>
+<div class="cards c3">
+<article class="card"><div class="ico"><svg><use href="#i-gear"/></svg></div><h3>Practical</h3><p>Learning connects to projects, real problems and useful outcomes.</p></article>
+<article class="card"><div class="ico"><svg><use href="#i-hand"/></svg></div><h3>Human</h3><p>Technology is strengthened by mentors, relationships, guidance and community.</p></article>
+<article class="card"><div class="ico"><svg><use href="#i-compass"/></svg></div><h3>Future Focused</h3><p>Young people are introduced to emerging technologies, changing careers and new opportunities.</p></article>
+</div>
+</div>
+</section>
 
-<section class="path"><div class="wrap"><div class="head"><div class="eyebrow">Our philosophy</div><h2>Learn. Build. Solve. Earn. Teach.</h2><p>Learning becomes powerful when young people can apply it, create value and help someone else grow.</p></div><div class="pathgrid"><div class="pathitem"><strong>01 · Learn</strong><span>Gain useful knowledge and skills.</span></div><div class="pathitem"><strong>02 · Build</strong><span>Create practical projects.</span></div><div class="pathitem"><strong>03 · Solve</strong><span>Apply skills to real problems.</span></div><div class="pathitem"><strong>04 · Earn</strong><span>Turn value into opportunities.</span></div><div class="pathitem"><strong>05 · Teach</strong><span>Share knowledge and lift others.</span></div></div></div></section>
+<section id="what-we-do">
+<div class="wrap">
+<div class="head"><span class="tag">What We Do</span><h2>Six program areas for a changing world.</h2></div>
+<div class="cards c3">
+<article class="card"><div class="ico"><svg><use href="#i-screen"/></svg></div><h3>Digital Skills</h3><p>Digital literacy, productivity, online tools, research and responsible digital participation.</p></article>
+<article class="card"><div class="ico"><svg><use href="#i-chip"/></svg></div><h3>Artificial Intelligence</h3><p>AI foundations, responsible AI use and practical exploration of emerging tools.</p></article>
+<article class="card"><div class="ico"><svg><use href="#i-bulb"/></svg></div><h3>Technology and Innovation</h3><p>Encourage experimentation, creativity, technology projects and useful solutions.</p></article>
+<article class="card"><div class="ico"><svg><use href="#i-rise"/></svg></div><h3>Entrepreneurship</h3><p>Ideas, value creation, opportunity discovery and pathways toward sustainable livelihoods.</p></article>
+<article class="card"><div class="ico"><svg><use href="#i-brief"/></svg></div><h3>Career Development</h3><p>Communication, problem solving, career awareness, professional skills and guidance.</p></article>
+<article class="card"><div class="ico"><svg><use href="#i-people"/></svg></div><h3>Leadership and Mentorship</h3><p>Build confidence, responsibility, collaboration and a culture of young people helping others grow.</p></article>
+</div>
+</div>
+</section>
 
-<section id="involve"><div class="wrap"><div class="head"><div class="eyebrow">Get involved</div><h2>Bring your skills, time or support.</h2><p>A strong community needs learners, mentors, volunteers and partners working together.</p></div><div class="split"><div class="feature"><h3>Mentors & Volunteers</h3><p>Share your professional knowledge, practical experience, time or skills with young people beginning their journey.</p><ul class="list"><li>Technology & AI</li><li>Entrepreneurship</li><li>Career guidance</li><li>Project support</li></ul><a class="btn primary" href="https://wa.me/254704110516?text=Hello%20Future%20Minds%20Mentorship%2C%20I%20would%20like%20to%20volunteer%20or%20become%20a%20mentor.">Become a Mentor</a></div><div class="feature dark"><h3>Learners & Families</h3><p>If you're a young person aged 9–25, parent or guardian, contact us to learn about upcoming enrollment and activities.</p><ul class="list"><li>Ask about upcoming programs</li><li>Explore learning opportunities</li><li>Connect with the team</li></ul><a class="btn primary" href="https://wa.me/254704110516?text=Hello%20Future%20Minds%20Mentorship%2C%20I%20would%20like%20to%20learn%20about%20joining.">Ask About Enrollment</a></div></div></div></section>
+<section id="approach" class="alt">
+<div class="wrap">
+<div class="head center"><span class="tag">Our Approach</span></div>
+<p class="bigphil">Learn. Build. Solve. Earn. Teach.</p>
+<ol class="steps" style="list-style:none">
+<li class="step"><b>01</b><h3>Learn</h3><p>Gain useful knowledge and skills.</p></li>
+<li class="step"><b>02</b><h3>Build</h3><p>Create practical projects and ideas.</p></li>
+<li class="step"><b>03</b><h3>Solve</h3><p>Apply skills to real problems.</p></li>
+<li class="step"><b>04</b><h3>Earn</h3><p>Explore ways skills can create value and opportunity.</p></li>
+<li class="step"><b>05</b><h3>Teach</h3><p>Share knowledge and help another person grow.</p></li>
+</ol>
+</div>
+</section>
 
-<section id="grants" class="light"><div class="wrap"><div class="head"><div class="eyebrow">Grants & partnerships</div><h2>Help us make opportunity more accessible.</h2><p>We are building relationships with foundations, companies, institutions, individuals and community partners who want to support youth technology and mentorship.</p></div><div class="cards"><div class="card"><div class="ico">◫</div><h3>Grant support</h3><p>Funding can support training, learning resources, devices, connectivity and practical projects.</p></div><div class="card"><div class="ico">◌</div><h3>Strategic partners</h3><p>Organizations can contribute expertise, spaces, technology, networks or program collaboration.</p></div><div class="card"><div class="ico">+</div><h3>Community supporters</h3><p>Individuals can help create opportunities through donations, mentorship or volunteering.</p></div></div><div class="actions"><a class="btn primary" href="mailto:tjuma815@gmail.com?subject=Future%20Minds%20Mentorship%20Partnership">Discuss a Partnership</a></div></div></section>
+<section id="who-we-serve">
+<div class="wrap">
+<div class="head"><span class="tag">Who We Serve</span><h2>Support for every stage of growth.</h2></div>
+<div class="cards c3">
+<article class="card age"><div class="yrs">9 to 12 <small>years</small></div><h3>Discover</h3><p>Build curiosity, digital confidence and early interest in technology.</p></article>
+<article class="card age"><div class="yrs">13 to 17 <small>years</small></div><h3>Explore</h3><p>Develop practical digital skills, creativity, problem solving and project experience.</p></article>
+<article class="card age"><div class="yrs">18 to 25 <small>years</small></div><h3>Launch</h3><p>Explore careers, entrepreneurship, advanced skills, leadership and real world opportunities.</p></article>
+</div>
+</div>
+</section>
 
-<section class="cta"><div class="wrap"><h2>The future needs prepared minds.</h2><p>Help a young person learn something useful, build something meaningful and become someone who can help others.</p><div class="actions" style="justify-content:center"><a class="btn primary" href="#contact">Connect With Us</a></div></div></section>
+<section id="impact" class="alt">
+<div class="wrap">
+<div class="head center"><span class="tag">Projects and Impact</span><h2>Impact we will publish, not promise.</h2>
+<p class="lead">Future Minds Mentorship will use this section to publish verified projects, activities, learner stories and measurable results as the organization grows.</p></div>
+<div class="cards c4">
+<div class="card stat"><b>9 to 25</b><span>Target age range</span></div>
+<div class="card stat"><b>5</b><span>Stages in our approach</span></div>
+<div class="card stat"><b>6</b><span>Core program areas</span></div>
+<div class="card stat"><b>Growing</b><span>Potential to scale</span></div>
+</div>
+<p class="note">These figures describe our organizational focus areas. They are not claims of completed impact. Results will be shared here only once they are verified.</p>
+</div>
+</section>
 
-<section id="contact"><div class="wrap contactgrid"><div><div class="eyebrow">Contact us</div><h2 style="font-size:42px;line-height:1.1;color:var(--navy)">Let's build the future together.</h2><p style="color:var(--muted)">Whether you want to mentor, volunteer, partner, support the project or learn more, we'd love to hear from you.</p><div class="contactbox"><div class="contactitem"><b>WhatsApp / Phone</b><span>+254 704 110 516</span></div><div class="contactitem"><b>Email</b><span>tjuma815@gmail.com</span></div><div class="contactitem"><b>Initial focus</b><span>Kakamega County, Kenya</span></div></div></div><form action="mailto:tjuma815@gmail.com" method="post" enctype="text/plain"><input name="name" placeholder="Your name" required><input name="email" type="email" placeholder="Your email" required><textarea name="message" placeholder="How would you like to connect?" required></textarea><button class="btn primary" type="submit">Send Message</button></form></div></section>
+<section id="mentors">
+<div class="wrap split">
+<div>
+<span class="tag">Mentors</span><h2>Share what you know. Shape what comes next.</h2>
+<p class="lead">Professionals, educators, technology practitioners, entrepreneurs and experienced individuals can contribute knowledge, guidance and encouragement that help young people see what is possible and how to reach it.</p>
+<p style="margin-top:28px"><a class="btn" href="https://wa.me/254704110516?text=Hello%20Future%20Minds%20Mentorship%2C%20I%20would%20like%20to%20become%20a%20mentor." target="_blank" rel="noopener">Become a Mentor</a></p>
+</div>
+<div class="panel"><div class="ico"><svg><use href="#i-people"/></svg></div><h3>What mentors contribute</h3><p>Knowledge, career guidance, practical feedback, encouragement and useful connections for young people at every stage.</p></div>
+</div>
+</section>
 
-<footer><div class="wrap foot"><div><b>Future Minds Mentorship</b><br><small>Learn. Build. Solve. Earn. Teach.</small></div><div>© 2026 Future Minds Mentorship</div></div></footer>
-</body></html>
+<section id="volunteers" class="alt">
+<div class="wrap split">
+<div class="panel"><div class="ico"><svg><use href="#i-hand"/></svg></div><h3>Many ways to help</h3><p>Volunteers can contribute time, skills, ideas, project support, training assistance and community support.</p></div>
+<div>
+<span class="tag">Volunteers</span><h2>Give your time. Multiply the impact.</h2>
+<p class="lead">Whether you can assist with training, support a project, share ideas or help organize community activities, your contribution helps young people learn and build with confidence.</p>
+<p style="margin-top:28px"><a class="btn" href="https://wa.me/254704110516?text=Hello%20Future%20Minds%20Mentorship%2C%20I%20would%20like%20to%20volunteer." target="_blank" rel="noopener">Volunteer With Us</a></p>
+</div>
+</div>
+</section>
+
+<section id="donors">
+<div class="wrap">
+<div class="head"><span class="tag">Donors</span><h2>Help expand access to opportunity.</h2>
+<p class="lead">Financial and in kind support can help expand access to the resources young people need to learn, build and grow.</p></div>
+<ul class="list">
+<li>Learning resources</li><li>Digital devices</li><li>Internet connectivity</li><li>Training</li><li>Technology projects</li><li>Mentorship</li><li>Educational materials</li><li>Program development</li>
+</ul>
+<a class="btn" href="mailto:tjuma815@gmail.com?subject=Future%20Minds%20Mentorship%20Support">Support Future Minds Mentorship</a>
+</div>
+</section>
+
+<section id="partnerships" class="alt">
+<div class="wrap">
+<div class="head"><span class="tag">Grants and Partnerships</span><h2>Build something that lasts.</h2>
+<p class="lead">Future Minds Mentorship is interested in appropriate partnerships with foundations, grant makers, companies, schools, institutions and international organizations working in these areas:</p></div>
+<ul class="list" style="grid-template-columns:repeat(3,1fr)">
+<li>Youth development</li><li>Digital inclusion</li><li>Technology education</li><li>AI education</li><li>Entrepreneurship</li><li>Career development</li><li>Mentorship</li><li>Innovation</li><li>Community development</li>
+</ul>
+<div class="cards c2">
+<article class="card"><div class="ico"><svg><use href="#i-rise"/></svg></div><h3>Grant Opportunities</h3><p>Funding can support training, learning resources, technology access, connectivity, practical projects, mentorship and program development.</p></article>
+<article class="card"><div class="ico"><svg><use href="#i-link"/></svg></div><h3>Strategic Partnerships</h3><p>Partners can contribute expertise, technology, networks, learning spaces, opportunities, sponsorship or collaborative programs.</p></article>
+</div>
+<p style="margin-top:34px"><a class="btn" href="mailto:tjuma815@gmail.com?subject=Future%20Minds%20Mentorship%20Partnership">Discuss a Partnership</a></p>
+</div>
+</section>
+
+<section id="get-involved">
+<div class="wrap">
+<div class="head center"><span class="tag">Get Involved</span><h2>Find your place in the work.</h2>
+<p class="lead">There are four ways to take part. Choose the one that fits you and reach out.</p></div>
+<div class="cards c4">
+<a class="card opt" href="https://wa.me/254704110516?text=Hello%20Future%20Minds%20Mentorship%2C%20I%20would%20like%20to%20become%20a%20mentor." target="_blank" rel="noopener"><div class="ico"><svg><use href="#i-people"/></svg></div><h3>Become a Mentor</h3><p>Guide a young person with your experience.</p></a>
+<a class="card opt" href="https://wa.me/254704110516?text=Hello%20Future%20Minds%20Mentorship%2C%20I%20would%20like%20to%20volunteer." target="_blank" rel="noopener"><div class="ico"><svg><use href="#i-hand"/></svg></div><h3>Volunteer</h3><p>Contribute your time and skills.</p></a>
+<a class="card opt" href="mailto:tjuma815@gmail.com?subject=Future%20Minds%20Mentorship%20Support"><div class="ico"><svg><use href="#i-rise"/></svg></div><h3>Become a Donor</h3><p>Support access to learning and technology.</p></a>
+<a class="card opt" href="mailto:tjuma815@gmail.com?subject=Future%20Minds%20Mentorship%20Partnership"><div class="ico"><svg><use href="#i-link"/></svg></div><h3>Partner With Us</h3><p>Collaborate to create lasting programs.</p></a>
+</div>
+</div>
+</section>
+
+<section id="contact" class="alt">
+<div class="wrap">
+<div class="head"><span class="tag">Contact</span><h2>Let’s start a conversation.</h2></div>
+<div class="contact">
+<div class="info">
+<div><small>WhatsApp / Phone</small><a href="https://wa.me/254704110516" target="_blank" rel="noopener">+254 704 110 516</a></div>
+<div><small>Email</small><a href="mailto:tjuma815@gmail.com">tjuma815@gmail.com</a></div>
+<div><small>Age Range</small>Young people aged 9 to 25</div>
+</div>
+<form id="cf" aria-label="Contact form">
+<label for="n">Name</label><input id="n" name="name" type="text" autocomplete="name" required>
+<label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" required>
+<label for="m">Message</label><textarea id="m" name="message" required></textarea>
+<button class="btn" type="submit">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+
+</main>
+<footer>
+<div class="wrap">
+<div class="fg">
+<div><a class="logo" href="#home" style="margin-bottom:14px">Future Minds Mentorship</a><p>Learn. Build. Solve. Earn. Teach.</p></div>
+<div><h4>Explore</h4><ul>
+<li><a href="#about">About Us</a></li><li><a href="#vision-mission">Vision and Mission</a></li><li><a href="#why">Why Future Minds Mentorship</a></li><li><a href="#what-we-do">What We Do</a></li><li><a href="#approach">Our Approach</a></li><li><a href="#who-we-serve">Who We Serve</a></li><li><a href="#impact">Projects and Impact</a></li></ul></div>
+<div><h4>Take part</h4><ul>
+<li><a href="#mentors">Mentors</a></li><li><a href="#volunteers">Volunteers</a></li><li><a href="#donors">Donors</a></li><li><a href="#partnerships">Grants and Partnerships</a></li><li><a href="#get-involved">Get Involved</a></li><li><a href="#contact">Contact</a></li><li><a href="mailto:tjuma815@gmail.com">tjuma815@gmail.com</a></li><li><a href="https://wa.me/254704110516" target="_blank" rel="noopener">+254 704 110 516</a></li></ul></div>
+</div>
+<div class="copy"><span>© 2026 Future Minds Mentorship</span><span>Young people aged 9 to 25</span></div>
+</div>
+</footer>
+<script>
+(function(){
+var b=document.querySelector('.burger'),n=document.getElementById('menu');
+function close(){n.classList.remove('open');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Open menu')}
+b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Close menu':'Open menu')});
+n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+document.getElementById('cf').addEventListener('submit',function(e){
+e.preventDefault();
+var f=e.target,body='Name: '+f.name.value+'\nEmail: '+f.email.value+'\n\n'+f.message.value;
+window.location.href='mailto:tjuma815@gmail.com?subject='+encodeURIComponent('Message from '+f.name.value+' via Future Minds Mentorship website')+'&body='+encodeURIComponent(body);
+});
+})();
+</script>
+</body>
+</html>
