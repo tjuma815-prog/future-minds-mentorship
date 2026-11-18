@@ -357,6 +357,136 @@ footer ul{gap:11px}
 .founder-copy h2{margin-bottom:14px}
 @media(max-width:640px){.founder-layout{grid-template-columns:1fr;gap:28px}.founder-portrait{max-width:240px}.founder-copy{text-align:left}}
 
+
+/* Final responsive design system */
+:root{
+  --navy:#09142f;
+  --navy2:#101f42;
+  --navy3:#172b56;
+  --gold:#d8ad4b;
+  --gold2:#f0d28a;
+  --text:#f2f5fb;
+  --mute:#b8c3d9;
+  --line:rgba(184,195,217,.16);
+}
+html{scroll-padding-top:92px}
+body{background:#09142f;color:var(--text);font-size:16px;line-height:1.7}
+.wrap{width:min(1180px,calc(100% - 56px))}
+header{background:rgba(9,20,47,.96);border-bottom:1px solid var(--line)}
+.bar{min-height:88px;height:88px}
+.logo{gap:14px;font-size:1.16rem;line-height:1.2;white-space:normal}
+.brand-logo{width:72px;height:72px;object-fit:contain}
+nav ul{gap:clamp(10px,1.35vw,19px)}
+nav a{font-size:.88rem}
+nav li .btn{white-space:nowrap}
+.hero{padding:86px 0 82px;min-height:620px;display:flex;align-items:center;background:radial-gradient(ellipse at 82% 35%,rgba(54,105,205,.2),transparent 43%),linear-gradient(115deg,#0b1734 0%,#0d1c3d 58%,#102653 100%)}
+.hero .grid{width:100%;grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr);gap:clamp(34px,5vw,72px)}
+.hero h1{max-width:720px;font-size:clamp(3.25rem,5.5vw,5.25rem);line-height:1.04;letter-spacing:-.045em}
+.hero p.sub{max-width:630px;font-size:1.08rem;line-height:1.78;color:#c1cbe0;margin:24px 0 30px}
+.hero .tag{font-size:.78rem;letter-spacing:.12em}
+.hero-visual{min-height:440px}
+.hero-logo-orbit{width:min(100%,430px);background:radial-gradient(circle,rgba(216,173,75,.14),rgba(61,123,255,.09) 52%,transparent 73%)}
+.hero-logo{width:76%;height:76%}
+.orbit{border-color:rgba(216,173,75,.42)}
+.visual-chip{font-size:.82rem;letter-spacing:.01em}
+.cta{gap:12px}
+.btn{min-height:52px;padding:13px 23px;border-radius:8px;font-size:.96rem;transition:transform .2s ease,background .2s ease,border-color .2s ease}
+.btn:focus-visible,.burger:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold2);outline-offset:4px}
+section{padding:clamp(76px,8vw,108px) 0}
+.head{max-width:790px;margin-bottom:42px}
+h2{letter-spacing:-.035em}
+.lead{font-size:1.06rem;line-height:1.8}
+.cards{gap:22px}
+.card{height:100%;padding:30px;border:1px solid rgba(184,195,217,.15);border-radius:14px;background:linear-gradient(150deg,#172b56,#101f42);box-shadow:0 12px 32px rgba(0,0,0,.12)}
+.card:hover{transform:translateY(-3px);border-color:rgba(216,173,75,.65)}
+.card p{font-size:.96rem;line-height:1.75}
+.editorial-photo{border-radius:14px;box-shadow:0 18px 44px rgba(0,0,0,.2)}
+.editorial-photo img{width:100%;object-fit:cover}
+.editorial-photo figcaption{font-size:.86rem}
+.editorial-photo figcaption small{line-height:1.55}
+.vm .card{min-height:230px}
+.step{padding:28px 20px}
+.step p{font-size:.94rem}
+.stat{min-height:155px}
+.founder-section{background:linear-gradient(145deg,#101f42,#09142f)}
+.founder-content{border-color:rgba(216,173,75,.35);background:linear-gradient(145deg,rgba(23,43,86,.94),rgba(13,28,60,.96));box-shadow:0 22px 60px rgba(0,0,0,.2)}
+.founder-layout{grid-template-columns:minmax(230px,.72fr) 1.5fr;gap:clamp(30px,5vw,60px)}
+.founder-portrait{max-width:300px;border-radius:14px}
+form{box-shadow:0 14px 36px rgba(0,0,0,.14)}
+input,textarea{border-color:rgba(184,195,217,.25)}
+input::placeholder,textarea::placeholder{color:#8998b5}
+footer{background:#060e22}
+footer .brand-logo{width:64px;height:64px}
+@media(max-width:980px){
+  .wrap{width:min(100% - 44px,760px)}
+  .bar{height:82px;min-height:82px}
+  .brand-logo{width:66px;height:66px}
+  .logo{font-size:1.05rem;max-width:270px}
+  nav{top:82px;max-height:calc(100vh - 82px);overflow-y:auto;background:#09142f}
+  nav ul{gap:0}
+  nav li a{padding:12px 4px}
+  .hero{min-height:0;padding:68px 0 64px}
+  .hero .grid{grid-template-columns:1fr;gap:28px}
+  .hero h1{max-width:760px;font-size:clamp(3rem,8vw,4.6rem)}
+  .hero p.sub{max-width:720px}
+  .hero-visual{min-height:360px;max-width:520px;width:100%;margin:0 auto}
+  .hero-logo-orbit{width:min(82%,390px)}
+  .chip-top{right:2%}.chip-bottom{left:2%}
+  .c4{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:640px){
+  .wrap{width:calc(100% - 36px)}
+  .bar{height:76px;min-height:76px;gap:8px}
+  .brand-logo{width:58px;height:58px}
+  .logo{font-size:.94rem;gap:9px;max-width:225px}
+  .burger{width:44px;height:44px;flex:0 0 44px}
+  nav{top:76px;max-height:calc(100dvh - 76px);padding:8px 18px 20px}
+  nav li a{padding:13px 4px;font-size:.98rem}
+  .hero{padding:54px 0 52px}
+  .hero .grid{gap:22px}
+  .hero h1{font-size:clamp(2.65rem,10.7vw,3.5rem);line-height:1.055;letter-spacing:-.04em}
+  .hero p.sub{font-size:1rem;line-height:1.72;margin:19px 0 23px}
+  .hero .tag{font-size:.72rem;margin-bottom:15px}
+  .cta{display:grid;grid-template-columns:1fr;gap:10px}
+  .cta .btn{width:100%;min-height:52px;padding:12px 18px}
+  .phil{font-size:1.12rem;margin-top:25px}
+  .hero-proof{margin-top:22px;gap:9px;font-size:.75rem}
+  .hero-proof i{height:18px}
+  .hero-visual{min-height:290px;margin-top:2px}
+  .hero-logo-orbit{width:min(78%,300px)}
+  .visual-chip{font-size:.72rem;padding:8px 11px}
+  .chip-top{top:7%;right:0}.chip-bottom{bottom:6%;left:0}
+  section{padding:66px 0}
+  .head{margin-bottom:32px}
+  h2{font-size:clamp(1.9rem,8vw,2.5rem)}
+  .lead{font-size:1rem;line-height:1.75}
+  .cards,.c2,.c3,.c4,.steps,.list,.fg{grid-template-columns:1fr}
+  .card{padding:25px}
+  .vm .card{min-height:0;padding:28px}
+  .collaboration-photo{height:230px}
+  .programme-photo,.innovation-photo{height:220px}
+  .mentor-photo{height:250px}
+  .founder-section{padding:66px 0}
+  .founder-content{padding:27px 22px}
+  .founder-layout{grid-template-columns:1fr;gap:25px}
+  .founder-portrait{max-width:220px}
+  .founder-copy{text-align:left}
+  .panel,form{padding:25px 21px}
+  .contact{gap:30px}
+  .fg{gap:28px}
+  footer{padding:54px 0 24px}
+  .copy{gap:8px}
+}
+@media(max-width:360px){
+  .wrap{width:calc(100% - 30px)}
+  .logo{font-size:.86rem;max-width:205px}
+  .hero h1{font-size:2.55rem}
+  .hero-proof{font-size:.69rem}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+
 </style>
   
 </head>
