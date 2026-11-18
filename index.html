@@ -277,6 +277,58 @@ footer ul{gap:11px}
  .copy{font-size:.84rem}
 }
 
+
+/* 2026 opening-section and layout redesign */
+.bar{height:116px}
+.logo{gap:18px;font-size:1.28rem}
+.brand-logo{width:116px;height:116px;padding:0;object-fit:contain}
+.hero{padding:94px 0 78px;background:radial-gradient(ellipse at 78% 42%,rgba(61,123,255,.2),transparent 42%),radial-gradient(ellipse at 15% 5%,rgba(212,168,67,.09),transparent 35%),var(--navy)}
+.hero .grid{grid-template-columns:1.08fr .92fr;gap:46px;align-items:center}
+.hero h1{max-width:720px;font-size:clamp(3.1rem,6vw,5.4rem)}
+.hero p.sub{max-width:620px;font-size:1.16rem;margin:26px 0 30px}
+.hero-visual{position:relative;min-height:480px;display:grid;place-items:center;isolation:isolate}
+.hero-logo-orbit{position:relative;width:min(100%,440px);aspect-ratio:1;display:grid;place-items:center;border-radius:50%;background:radial-gradient(circle,rgba(212,168,67,.12),rgba(61,123,255,.08) 52%,transparent 72%)}
+.hero-logo{position:relative;z-index:2;width:82%;height:82%;object-fit:contain;filter:drop-shadow(0 18px 28px rgba(0,0,0,.28))}
+.orbit{position:absolute;inset:5%;border:1px solid rgba(212,168,67,.34);border-radius:50%;transform:rotate(-24deg) scaleY(.72)}
+.orbit-two{inset:13%;border-color:rgba(143,180,255,.34);transform:rotate(36deg) scaleY(.72)}
+.visual-chip{position:absolute;z-index:3;padding:12px 17px;border:1px solid rgba(212,168,67,.42);border-radius:999px;background:rgba(10,22,51,.92);box-shadow:0 12px 34px rgba(0,0,0,.24);font-size:.9rem;font-weight:650;color:var(--text);backdrop-filter:blur(8px)}
+.visual-chip span{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--gold);margin-right:9px;box-shadow:0 0 12px var(--gold)}
+.chip-top{top:14%;right:-2%}.chip-bottom{bottom:13%;left:-4%}
+.hero-proof{display:flex;align-items:center;gap:17px;margin-top:38px;color:var(--mute);font-size:.87rem;flex-wrap:wrap}
+.hero-proof b{color:var(--gold2);font-family:var(--serif);font-size:1.18rem;margin-right:4px}
+.hero-proof i{height:24px;width:1px;background:var(--line)}
+.head{max-width:780px}
+.center.head{margin-inline:auto}
+.cards{gap:26px}
+.card{padding:34px;box-shadow:0 14px 38px rgba(0,0,0,.12)}
+.card:hover{box-shadow:0 20px 48px rgba(0,0,0,.2)}
+.alt .card{background:linear-gradient(150deg,#101f43,#0a1633)}
+.vm .card{min-height:250px}
+.step{padding:32px 24px}
+.stat{min-height:170px;display:flex;flex-direction:column;justify-content:center}
+.founder-content{max-width:960px}
+@media(max-width:980px){
+ .bar{height:100px}.brand-logo{width:100px;height:100px}
+ .hero .grid{grid-template-columns:1fr;gap:22px}
+ .hero-visual{min-height:420px;max-width:560px;width:100%;margin:0 auto}
+ .hero-logo-orbit{width:min(88%,420px)}
+ .chip-top{right:2%}.chip-bottom{left:2%}
+}
+@media(max-width:640px){
+ .bar{height:88px}.brand-logo{width:84px;height:84px}
+ .logo{font-size:.96rem;gap:10px;max-width:250px}
+ .hero{padding:58px 0 64px}
+ .hero h1{font-size:clamp(2.55rem,11.5vw,3.6rem)}
+ .hero p.sub{font-size:1.04rem;margin:20px 0 25px}
+ .hero-visual{min-height:330px;margin-top:4px}
+ .hero-logo-orbit{width:min(82%,310px)}
+ .visual-chip{font-size:.76rem;padding:9px 12px}
+ .chip-top{top:8%;right:0}.chip-bottom{bottom:7%;left:0}
+ .hero-proof{gap:10px;margin-top:28px;font-size:.78rem}
+ .hero-proof b{font-size:1.05rem}
+ .cards{gap:17px}.card{padding:26px}
+}
+
 </style>
   
 </head>
@@ -322,21 +374,17 @@ footer ul{gap:11px}
 <section class="hero" id="home">
 <div class="wrap grid">
 <div>
-<span class="tag">Youth development and community technology initiative</span>
-<h1>Building minds for a changing world.</h1>
-<p class="sub">Future Minds Mentorship equips young people aged 9 to 25 with technology, AI, digital skills, mentorship, entrepreneurship and career development opportunities that help turn potential into practical action.</p>
+<span class="tag">A youth development initiative</span>
+<h1>Equipping young people to shape what comes next.</h1>
+<p class="sub">We help young people aged 9 to 25 develop the digital skills, confidence and practical experience to navigate a changing world. Through technology, AI, mentorship and entrepreneurship, learning becomes something they can apply.</p>
 <div class="cta"><a class="btn" href="#get-involved">Get Involved</a><a class="btn ghost" href="#what-we-do">Explore Programs</a></div>
 <p class="phil">Learn. Build. Solve. Earn. Teach.</p>
+<div class="hero-proof"><span><b>9–25</b> years</span><i></i><span><b>6</b> learning areas</span><i></i><span><b>5</b> stages of growth</span></div>
 </div>
-<div class="net" aria-hidden="true">
-<svg viewBox="0 0 400 400" fill="none">
-<g stroke="#8fb4ff" stroke-opacity=".45" stroke-width="1.5"><path d="M200 70L90 150M200 70L310 150M90 150L120 280M310 150L280 280M90 150L310 150M120 280L280 280M200 70L200 200M200 200L90 150M200 200L310 150M200 200L120 280M200 200L280 280"/></g>
-<g fill="#0f1f45" stroke="#d4a843" stroke-width="2.5"><circle cx="200" cy="70" r="20"/><circle cx="90" cy="150" r="16"/><circle cx="310" cy="150" r="16"/><circle cx="120" cy="280" r="16"/><circle cx="280" cy="280" r="16"/></g>
-<circle cx="200" cy="200" r="38" fill="#d4a843"/>
-<circle class="pulse" cx="200" cy="200" r="58" stroke="#d4a843" stroke-opacity=".5" stroke-width="2"/>
-<path d="M186 214v-28h26M186 200h20" stroke="#0a1633" stroke-width="5" stroke-linecap="round"/>
-<g font-family="Georgia,serif" font-size="15" fill="#e8edf7" text-anchor="middle"><text x="200" y="35">Learn</text><text x="60" y="185">Build</text><text x="340" y="185">Solve</text><text x="120" y="325">Earn</text><text x="280" y="325">Teach</text></g>
-</svg>
+<div class="hero-visual">
+<div class="hero-logo-orbit"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><img src="logo.png" alt="Future Minds Mentorship emblem" class="hero-logo"></div>
+<div class="visual-chip chip-top"><span></span> Technology &amp; AI</div>
+<div class="visual-chip chip-bottom"><span></span> Mentorship that moves ideas forward</div>
 </div>
 </div>
 </section>
