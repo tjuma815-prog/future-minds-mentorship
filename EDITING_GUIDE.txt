@@ -8,15 +8,13 @@ Search for the text you want to change and replace it.
 Current contact details:
 WhatsApp/Phone: +254 704 110 516
 Email: tjuma815@gmail.com
-Initial focus: Kakamega County, Kenya
+Reach: Online and community-based; not limited to one county
 
 3. LOGO
-The text logo is currently written in the navigation as:
-Future Minds Mentorship
-You can replace it with an image logo later.
+The official logo is stored as logo.png and is used in the navigation and footer. Keep the filename unchanged unless you also update its references in index.html.
 
 4. PHOTOS
-This version is intentionally built without external photos. Photos can be added later to the About, Programs and Impact sections.
+The current design uses a custom illustrated hero graphic and the official logo. Add real photographs only when they are authentic, relevant and cleared for publication.
 
 5. FORMS
 The current contact form opens the visitor's email application. A real online form can be connected later to a form service or backend.
@@ -28,4 +26,4 @@ Upload index.html to a web host. Good beginner-friendly options include GitHub P
 Do not delete the <style> section unless you know CSS. It controls the design.
 
 8. NEXT UPGRADE
-Add the actual Future Minds logo, real photos, social media links, a proper enrollment form, mentor application form, grants page, project updates/blog, and a custom domain.
+Potential next improvements: dedicated mentor and volunteer application forms, a learner registration process with appropriate safeguarding for minors, verified project updates, and a custom domain when affordable. Social links are already included in the website footer.
