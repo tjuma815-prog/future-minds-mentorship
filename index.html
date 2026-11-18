@@ -330,14 +330,12 @@ footer ul{gap:11px}
 }
 
 
-/* Real photography in the opening section */
-.hero-photo{position:relative;width:100%;max-width:560px;aspect-ratio:4/4.35;margin:0 auto;overflow:hidden;border-radius:28px;border:1px solid rgba(212,168,67,.38);background:var(--navy3);box-shadow:0 28px 70px rgba(0,0,0,.32)}
-.hero-photo:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(7,16,41,.78));pointer-events:none}
-.hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 42%}
-.hero-photo figcaption{position:absolute;z-index:1;left:24px;right:24px;bottom:22px;color:#fff;font-weight:650;font-size:.98rem;letter-spacing:.01em}
-.photo-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--gold);margin-right:10px;box-shadow:0 0 12px rgba(212,168,67,.8)}
-@media(max-width:980px){.hero-photo{max-width:540px;aspect-ratio:16/12}}
-@media(max-width:640px){.hero-photo{width:100%;max-width:420px;aspect-ratio:4/4.2;border-radius:22px}.hero-photo figcaption{left:18px;bottom:17px;font-size:.88rem}}
+/* Supporting photography; the official logo remains unchanged */
+.about-photo{position:relative;width:100%;max-width:1000px;height:clamp(230px,38vw,420px);margin:0 auto 54px;overflow:hidden;border-radius:22px;border:1px solid rgba(212,168,67,.35);background:var(--navy3);box-shadow:0 22px 56px rgba(0,0,0,.24)}
+.about-photo:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(7,16,41,.72));pointer-events:none}
+.about-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.about-photo figcaption{position:absolute;z-index:1;left:24px;bottom:20px;color:#fff;font-weight:650;font-size:.98rem}
+@media(max-width:640px){.about-photo{height:260px;border-radius:16px;margin-bottom:38px}.about-photo figcaption{left:18px;bottom:16px;font-size:.88rem}}
 
 </style>
   
@@ -392,18 +390,19 @@ footer ul{gap:11px}
 <div class="hero-proof"><span><b>9–25</b> years</span><i></i><span><b>6</b> learning areas</span><i></i><span><b>5</b> stages of growth</span></div>
 </div>
 <div class="hero-visual">
-<figure class="hero-photo">
-<img src="https://images.unsplash.com/photo-1758270705317-3ef6142d306f?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="Young people collaborating around a laptop during a learning activity" fetchpriority="high" decoding="async">
-<figcaption><span class="photo-dot"></span> Learning through collaboration</figcaption>
-</figure>
+<div class="hero-logo-orbit"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><img src="logo.png" alt="Official Future Minds Mentorship logo" class="hero-logo"></div>
 <div class="visual-chip chip-top"><span></span> Technology &amp; AI</div>
-<div class="visual-chip chip-bottom"><span></span> Ideas into practical solutions</div>
+<div class="visual-chip chip-bottom"><span></span> Mentorship that moves ideas forward</div>
 </div>
 </div>
 </section>
 
 <section id="about" class="alt">
 <div class="wrap">
+<figure class="about-photo">
+<img src="https://images.unsplash.com/photo-1758270705317-3ef6142d306f?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="Young people collaborating around a laptop during a learning activity" loading="lazy" decoding="async">
+<figcaption>Learning through collaboration</figcaption>
+</figure>
 <div class="head"><span class="tag">About Us</span><h2>Turning potential into possibility.</h2>
 <p class="lead">Future Minds Mentorship connects technology and digital learning with practical projects, problem solving, entrepreneurship, career development and human mentorship. We are built to grow into a national and international organization that serves young people wherever opportunity is needed.</p></div>
 <div class="cards c3">
