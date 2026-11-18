@@ -192,6 +192,91 @@ section{padding:68px 0}.hero{padding:70px 0}
 .founder-motto{font-family:var(--serif);font-size:1.25rem;color:var(--gold2);margin-top:26px}
 .social-links{display:flex;flex-wrap:wrap;gap:14px;margin-top:18px}.social-links a{display:inline-flex;align-items:center;padding:9px 13px;border:1px solid var(--line);border-radius:8px}
 @media(max-width:640px){.founder-section{padding:60px 16px}.founder-content{padding:28px 22px}}
+
+/* Visual refinement: stronger brand presence, typography and consistent rhythm */
+:root{--section-space:clamp(76px,8vw,112px)}
+html{scroll-padding-top:104px}
+body{line-height:1.72;letter-spacing:.005em}
+.wrap{width:min(1200px,100% - 48px)}
+section{padding:var(--section-space) 0}
+h1,h2,h3{line-height:1.12;letter-spacing:-.025em}
+h1{font-size:clamp(2.8rem,6.2vw,5.35rem);max-width:760px;line-height:1.04;letter-spacing:-.04em}
+h2{font-size:clamp(2.05rem,4vw,3.25rem);line-height:1.12;margin-bottom:22px}
+h3{font-size:1.32rem;line-height:1.25;letter-spacing:-.012em}
+p{line-height:1.78}
+.lead{font-size:1.13rem;line-height:1.8;max-width:720px}
+.head{margin-bottom:54px}
+.tag{font-size:.82rem;letter-spacing:.075em;text-transform:uppercase;margin-bottom:18px}
+.bar{height:100px;gap:24px}
+.logo{gap:16px;font-size:1.22rem;letter-spacing:.005em;line-height:1.25;white-space:nowrap}
+.brand-logo{width:92px;height:92px;object-fit:contain;flex-shrink:0}
+nav ul{gap:clamp(12px,1.6vw,22px)}
+nav a{font-size:.91rem;letter-spacing:.005em}
+nav .btn{padding:10px 17px}
+.hero{padding:112px 0 106px}
+.hero .grid{gap:64px;grid-template-columns:1.12fr .88fr}
+.hero p.sub{font-size:1.2rem;line-height:1.82;margin:30px 0 36px;max-width:650px}
+.phil{font-size:1.28rem;letter-spacing:.055em;margin-top:36px}
+.net{padding:26px;border-radius:28px;box-shadow:0 28px 70px rgba(0,0,0,.2);border-color:rgba(212,168,67,.28)}
+.btn{padding:15px 27px;border-radius:9px;letter-spacing:.01em}
+.cards{gap:24px}
+.card{padding:32px;border-radius:16px;line-height:1.75}
+.card p{line-height:1.78;margin-top:4px}
+.ico{width:52px;height:52px;margin-bottom:22px}
+.vm{gap:28px}
+.vm .card{padding:48px}
+.steps{gap:6px}
+.step{padding:30px 20px}
+.step p{line-height:1.7}
+.panel{padding:44px;border-radius:20px}
+.list{gap:14px 26px}
+.list li{line-height:1.65}
+.contact{gap:56px}
+form{padding:36px;border-radius:18px}
+input,textarea{padding:14px 16px;margin-bottom:22px}
+footer{padding:70px 0 30px}
+.fg{gap:52px}
+footer ul{gap:11px}
+.copy{padding-top:24px}
+.founder-section{padding:100px 20px}
+.founder-content{max-width:880px;padding:54px}
+.founder-content p:not(.section-label):not(.founder-role):not(.founder-motto){line-height:1.85}
+.social-links{gap:12px}
+.social-links a{padding:10px 15px;transition:background .2s,border-color .2s,color .2s}
+.social-links a:hover{background:rgba(212,168,67,.1);border-color:var(--gold);color:var(--gold2)}
+@media(max-width:980px){
+ html{scroll-padding-top:84px}
+ .bar{height:84px}
+ .brand-logo{width:76px;height:76px}
+ .logo{font-size:1.12rem;gap:12px}
+ nav{top:84px}
+ .hero{padding:82px 0}
+ .hero .grid{gap:42px}
+ .fg{gap:34px}
+}
+@media(max-width:640px){
+ .wrap{width:min(100% - 36px,560px)}
+ section{padding:72px 0}
+ .bar{height:80px;gap:10px}
+ .brand-logo{width:68px;height:68px}
+ .logo{font-size:.98rem;gap:9px;white-space:normal;max-width:245px}
+ nav{top:80px;padding:12px 18px 22px}
+ .hero{padding:70px 0 72px}
+ .hero .grid{gap:38px}
+ h1{font-size:clamp(2.55rem,12vw,3.65rem);line-height:1.06}
+ h2{font-size:clamp(1.95rem,9vw,2.55rem)}
+ .hero p.sub{font-size:1.06rem;line-height:1.75;margin:22px 0 28px}
+ .net{width:100%;max-width:360px;margin-inline:auto;padding:16px;border-radius:22px}
+ .head{margin-bottom:36px}
+ .card{padding:27px}
+ .vm .card{padding:30px}
+ .founder-section{padding:68px 16px}
+ .founder-content{padding:30px 24px}
+ .panel,form{padding:28px 24px}
+ .fg{gap:30px}
+ .copy{font-size:.84rem}
+}
+
 </style>
   
 </head>
