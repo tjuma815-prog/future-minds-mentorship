@@ -332,6 +332,23 @@ footer ul{gap:11px}
 
 
 
+
+/* Documentary photography: illustrative images with source credits */
+.editorial-photo{margin:34px 0 42px;overflow:hidden;border-radius:18px;background:var(--navy3);border:1px solid rgba(212,168,67,.28);box-shadow:0 16px 38px rgba(0,0,0,.18)}
+.editorial-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.editorial-photo figcaption{padding:13px 17px 15px;color:var(--text);font-size:.92rem;font-weight:650}
+.editorial-photo figcaption small{display:block;margin-top:5px;font-size:.72rem;font-weight:450;opacity:.72}
+.editorial-photo figcaption a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.collaboration-photo{height:clamp(240px,39vw,430px);margin-top:30px}
+.collaboration-photo img{object-position:center 44%}
+.programme-photo{max-width:900px;height:clamp(220px,32vw,360px);margin:34px auto 40px}
+.programme-photo img{object-position:center 40%}
+.mentor-photo{height:100%;min-height:270px;margin:0}
+.mentor-photo img{min-height:270px;max-height:360px}
+.innovation-photo{max-width:980px;height:clamp(220px,32vw,360px);margin:32px auto 28px}
+.innovation-photo img{object-position:center 48%}
+@media(max-width:640px){.editorial-photo{border-radius:14px;margin:25px 0 32px}.collaboration-photo{height:250px}.programme-photo{height:230px}.mentor-photo{min-height:240px}.mentor-photo img{min-height:240px}.innovation-photo{height:230px}.editorial-photo figcaption{padding:11px 13px 13px}}
+
 </style>
   
 </head>
@@ -396,6 +413,10 @@ footer ul{gap:11px}
 <div class="wrap">
 <div class="head"><span class="tag">About Us</span><h2>Turning potential into possibility.</h2>
 <p class="lead">Future Minds Mentorship connects technology and digital learning with practical projects, problem solving, entrepreneurship, career development and human mentorship. We are built to grow into a national and international organization that serves young people wherever opportunity is needed.</p></div>
+<figure class="editorial-photo collaboration-photo">
+<img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/A_group_of_students_using_a_computer_laptop.jpg/1280px-A_group_of_students_using_a_computer_laptop.jpg" alt="African school students collaborating around a laptop outdoors" loading="lazy" decoding="async">
+<figcaption>Learning grows through collaboration.<small>Illustrative photograph · <a href="https://commons.wikimedia.org/wiki/File:A_group_of_students_using_a_computer_laptop.jpg" target="_blank" rel="noopener">Kwameghana (Bright Kwame Ayisi)</a> · CC0</small></figcaption>
+</figure>
 <div class="cards c3">
 <article class="card"><div class="ico"><svg><use href="#i-screen"/></svg></div><h3>Accessible Learning</h3><p>Make technology and digital learning practical, understandable and relevant.</p></article>
 <article class="card"><div class="ico"><svg><use href="#i-bulb"/></svg></div><h3>Practical Innovation</h3><p>Encourage young people to build, experiment and solve real problems.</p></article>
@@ -430,6 +451,10 @@ footer ul{gap:11px}
 <section id="what-we-do">
 <div class="wrap">
 <div class="head"><span class="tag">What We Do</span><h2>Six program areas for a changing world.</h2></div>
+<figure class="editorial-photo programme-photo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Computer_engineer.jpg/1280px-Computer_engineer.jpg" alt="Young African woman working at a laptop, with other learners in the background" loading="lazy" decoding="async">
+<figcaption>Digital skills create room for new possibilities.<small>Illustrative photograph · <a href="https://commons.wikimedia.org/wiki/File:Computer_engineer.jpg" target="_blank" rel="noopener">Deo photographer</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></small></figcaption>
+</figure>
 <div class="cards c3">
 <article class="card"><div class="ico"><svg><use href="#i-screen"/></svg></div><h3>Digital Skills</h3><p>Digital literacy, productivity, online tools, research and responsible digital participation.</p></article>
 <article class="card"><div class="ico"><svg><use href="#i-chip"/></svg></div><h3>Artificial Intelligence</h3><p>AI foundations, responsible AI use and practical exploration of emerging tools.</p></article>
@@ -476,6 +501,10 @@ footer ul{gap:11px}
 <div class="card stat"><b>6</b><span>Core program areas</span></div>
 <div class="card stat"><b>Growing</b><span>Potential to scale</span></div>
 </div>
+<figure class="editorial-photo innovation-photo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Student_ICT_IOT_02.jpg" alt="African students at a technology fair exploring an Internet of Things project" loading="lazy" decoding="async">
+<figcaption>Young people turning technology into practical ideas.<small>Illustrative photograph · <a href="https://commons.wikimedia.org/wiki/File:Student_ICT_IOT_02.jpg" target="_blank" rel="noopener">Amuzujoe</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></small></figcaption>
+</figure>
 <p class="note">These figures describe our organizational focus areas. They are not claims of completed impact. Results will be shared here only once they are verified.</p>
 </div>
 </section>
@@ -487,7 +516,12 @@ footer ul{gap:11px}
 <p class="lead">Professionals, educators, technology practitioners, entrepreneurs and experienced individuals can contribute knowledge, guidance and encouragement that help young people see what is possible and how to reach it.</p>
 <p style="margin-top:28px"><a class="btn" href="https://wa.me/254704110516?text=Hello%20Future%20Minds%20Mentorship%2C%20I%20would%20like%20to%20become%20a%20mentor." target="_blank" rel="noopener">Become a Mentor</a></p>
 </div>
-<div class="panel"><div class="ico"><svg><use href="#i-people"/></svg></div><h3>What mentors contribute</h3><p>Knowledge, career guidance, practical feedback, encouragement and useful connections for young people at every stage.</p></div>
+<div>
+<figure class="editorial-photo mentor-photo">
+<img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Teacher_teaches_computers.jpg/1280px-Teacher_teaches_computers.jpg" alt="Kenyan teacher guiding a primary school student at a desktop computer" loading="lazy" decoding="async">
+<figcaption>Guidance makes learning more meaningful.<small>Illustrative photograph · <a href="https://commons.wikimedia.org/wiki/File:Teacher_teaches_computers.jpg" target="_blank" rel="noopener">Nduati.githae</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a></small></figcaption>
+</figure>
+</div>
 </div>
 </section>
 
