@@ -349,6 +349,14 @@ footer ul{gap:11px}
 .innovation-photo img{object-position:center 48%}
 @media(max-width:640px){.editorial-photo{border-radius:14px;margin:25px 0 32px}.collaboration-photo{height:250px}.programme-photo{height:230px}.mentor-photo{min-height:240px}.mentor-photo img{min-height:240px}.innovation-photo{height:230px}.editorial-photo figcaption{padding:11px 13px 13px}}
 
+
+/* Founder portrait: use the founder's connected GitHub profile avatar */
+.founder-layout{display:grid;grid-template-columns:minmax(220px, .72fr) 1.5fr;gap:44px;align-items:center}
+.founder-portrait{width:100%;max-width:320px;aspect-ratio:1;margin-inline:auto;border:3px solid var(--gold);border-radius:18px;overflow:hidden;background:var(--navy3);box-shadow:0 18px 42px rgba(0,0,0,.28)}
+.founder-portrait img{display:block;width:100%;height:100%;object-fit:cover}
+.founder-copy h2{margin-bottom:14px}
+@media(max-width:640px){.founder-layout{grid-template-columns:1fr;gap:28px}.founder-portrait{max-width:240px}.founder-copy{text-align:left}}
+
 </style>
   
 </head>
@@ -595,34 +603,19 @@ footer ul{gap:11px}
 </section>
 
 <section id="founder" class="founder-section" aria-labelledby="founder-title">
-  <div class="founder-content">
- <p class="section-label">THE VISION BEHIND THE MISSION</p>
-
-    <h2 id="founder-title">Meet the Founder</h2>
-
-    <h3>Juma Timothy Inzai</h3>
-
-    <p class="founder-role">
-      Founder &amp; Vision Lead, Future Minds Mentorship
-    </p>
-
-    <p>
-      Juma Timothy Inzai founded Future Minds Mentorship
-      to empower young people to discover their potential,
-      develop practical skills, and prepare for a rapidly
-      changing world.
-    </p>
-
-    <p>
-      Through technology, artificial intelligence, digital
-      skills, entrepreneurship and mentorship, the initiative
-      aims to help young people turn ideas into practical
-      solutions and meaningful opportunities.
-    </p>
-
-    <p class="founder-motto">
-      Learn. Build. Solve. Earn. Teach.
-    </p>
+  <div class="founder-content founder-layout">
+    <div class="founder-portrait">
+      <img src="https://avatars.githubusercontent.com/u/338509222?v=4" alt="Juma Timothy Inzai, Founder of Future Minds Mentorship" loading="lazy" decoding="async">
+    </div>
+    <div class="founder-copy">
+      <p class="section-label">THE VISION BEHIND THE MISSION</p>
+      <h2 id="founder-title">Meet the Founder</h2>
+      <h3>Juma Timothy Inzai</h3>
+      <p class="founder-role">Founder &amp; Vision Lead, Future Minds Mentorship</p>
+      <p>Juma Timothy Inzai founded Future Minds Mentorship to empower young people to discover their potential, develop practical skills, and prepare for a rapidly changing world.</p>
+      <p>Through technology, artificial intelligence, digital skills, entrepreneurship and mentorship, the initiative aims to help young people turn ideas into practical solutions and meaningful opportunities.</p>
+      <p class="founder-motto">Learn. Build. Solve. Earn. Teach.</p>
+    </div>
   </div>
 </section>
 
